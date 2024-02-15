@@ -12,7 +12,7 @@ const SingleEvent = ({ articleData }: ResulData) => {
 
   return (
     <Col>
-      <Card className="h-100">
+      <Card className="h-100 shadow border-2 border-secondary">
         <Card.Img
           variant="top"
           src={articleData.image_url}
@@ -24,10 +24,6 @@ const SingleEvent = ({ articleData }: ResulData) => {
         />
         <Card.Body className="d-flex align-items-center">
           <Card.Title>{articleData.title}</Card.Title>
-          {/* <Card.Text>
-            Link: <a href={articleData.url}>Click Here</a>
-          </Card.Text>
-          <Card.Text>{articleData.summary}</Card.Text> */}
         </Card.Body>
       </Card>
     </Col>

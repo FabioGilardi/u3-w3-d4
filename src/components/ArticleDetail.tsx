@@ -47,7 +47,7 @@ const ArticleDetail = () => {
             </div>
           )}
           {!isLoading && (
-            <Card>
+            <Card className="shadow-lg border-secondary">
               <Card.Img variant="top" src={singleArticle?.image_url} />
               <Card.Body>
                 <Card.Title>{singleArticle?.title}</Card.Title>
