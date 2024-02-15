@@ -55,6 +55,10 @@ const ArticleDetail = () => {
                   Link to full Article: <a href={singleArticle?.url}>here</a>
                 </Card.Text>
                 <Card.Text>News Site: {singleArticle?.news_site}</Card.Text>
+                <Card.Text>
+                  Publish date:{" "}
+                  {singleArticle?.published_at.toLocaleString().slice(0, 10)}
+                </Card.Text>
                 <Card.Text>Summary: {singleArticle?.summary}</Card.Text>
                 <Card.Text></Card.Text>
               </Card.Body>
